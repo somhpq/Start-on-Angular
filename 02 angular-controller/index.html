@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Start Angular</title>
+</head>
+<body ng-app='startAngular'>
+
+This page show the basic step to introduce controller into this page (view)
+We have data from the controller bound onto a p tag in the page using ng-bind attribute (aka ng-bind directive)
+
+
+<div ng-controller="firstController">
+	<span ng-bind="GreetingText" style='color: yellow; background-color: #555555'></span>
+</div>
+
+
+<pre>
+Notice
+1. this html page include controller java script file
+2. the area that the controller will be in effect is assign with the attribute ng-controller (akang-controller directive)
+</pre>
+
+<script type='text/javascript' src='../lib/angular/angular.min.js'></script>
+<script type="text/javascript" src='app.js'></script> 
+<script type="text/javascript" src="controller.js"></script>    
+
+</body>
+</html>
